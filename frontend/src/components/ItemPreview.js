@@ -38,8 +38,8 @@ const ItemPreview = (props) => {
         alt="item"
         src={item.image}
         onerror={(e) => {
-          e.target.src = '../imgs/placeholder.png' //replacement image imported above
-       }}
+          e.target.src = '/placeholder.png' //replacement image imported above
+        }}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
