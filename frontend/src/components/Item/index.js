@@ -51,6 +51,9 @@ class Item extends React.Component {
             <div className="col-6">
               <img
                 src={this.props.item.image}
+                onerror={(e) => {
+                  e.target.src = '/placeholder.png' //replacement image imported above
+                }}
                 alt={this.props.item.title}
                 className="item-img"
                 style={{ height: "500px", width: "100%", borderRadius: "6px" }}
